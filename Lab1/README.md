@@ -92,28 +92,32 @@ header,nav,article,div,footer{
 ```css
 
 ```
-```head{
+```header{
     width: 100%;
+    background-color: darkgrey;
 }
 footer{
     width: 100%;
     clear: both;
-    
+    background-color: bisque;
 }
 nav{
     float: left;
     width: 20%;
     height: 200px;
+    background-color: coral;
 }
 div{
     float: left;
     width: 20%;
     height: 200px;
+    background-color: darkgoldenrod;
 }
 article{
     float: left;
     width: 60%;
     height: 200px;
+    background-color: darkseagreen;
 }
 ```
 ---
