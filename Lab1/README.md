@@ -37,6 +37,8 @@ This file contains the structure we will style using CSS.
 ---
 
 ### Step 2: Setting Up the CSS File
+```<link real ="stylesheet" href="layout.css">
+```
 - In your code editor, create a new file and name it `layout.css`.
 - In the `<head>` section of `index.html`, link the CSS file:
 ```css
@@ -51,6 +53,13 @@ This file contains the structure we will style using CSS.
 
 ---
 ### Step 3: Styling the Page Body
+```* { 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+```
 - Add the following styles to your CSS file under the previous code:
     - Set font family to Arial for better readability.
 ```css
@@ -65,7 +74,14 @@ This file contains the structure we will style using CSS.
     - Center the text in each section.
 ```css
 ```
-
+```}
+header,nav,article,div,footer{
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: yellow;
+    
+    text-align: center;
+```
 ---
 ### Step 5: Positioning the Layout Using Floats
 - Add the following CSS code to position the layout:
@@ -74,8 +90,32 @@ This file contains the structure we will style using CSS.
     - Assign width percentages to each remaining section: 20% for nav and div, and 60% for article. Set a height of these elements to 200px for visualization purposes.
     - Ensures the footer appears below the nav, article, and div sections.
 ```css
-```
 
+```
+```head{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    clear: both;
+    
+}
+nav{
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+div{
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+article{
+    float: left;
+    width: 60%;
+    height: 200px;
+}
+```
 ---
 ### Step 6: Testing the Layout
 - Open the index.html file in a web browser.
