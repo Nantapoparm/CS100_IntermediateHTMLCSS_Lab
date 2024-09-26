@@ -113,9 +113,8 @@ nav {
     width: 20%;
     float: left;
     height: 100vh;
-    position: sticky;
-    
-}
+    position: fixed;}
+```
 ```
 
 ---
